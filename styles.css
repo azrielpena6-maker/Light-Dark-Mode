@@ -19,7 +19,7 @@ body {
     font-family: Arial, sans-serif;
     background: var(--bg);
     color: var(--text);
-    transition: background 0.3s ease, color 0.3s ease;
+    transition: background 0.3s ease, color 0;
 }
 
 .navbar{
@@ -33,7 +33,46 @@ body {
     transition: background 0.3s ease;
 }
 
-.navbar a {
-    color: white;
-    margin-right: 15px;
+.nav-left a {
+    color: var(--nav-text);
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: bold;
+
+}
+.nav-left a:hover {
+    opacity: 0.7;
+}
+
+/* Toggle Switch Styling */
+
+.theme-toggle {
+    display: flex;
+    align-items: center;
+}
+
+/* Hide default checkbox */
+
+#theme-switch {
+    display: none;
+}
+
+/* Toggle background */
+.toggle-label {
+    width: 50px;
+    height: 25px;
+    background: var(--card);
+    display: block;
+    border-radius: 50px;
+    position: relative;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+/* Toggle ball*/
+.toggle-ball {
+    width: 21px;
+    height: 21px;
+    background: var(--text);
+    
 }
