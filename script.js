@@ -8,7 +8,7 @@ if (localStorage.getItem("theme") === "dark") {
 }
 
 // Toggle theme on switch change
-themeSwitch.addEventListener("change" ,() => {
+themeSwitch.addEventListener("change" , () => {
     if (themeSwitch.checked) {
         body.classList.add("dark");
         localStorage.setItem("theme" , "dark");
@@ -16,4 +16,4 @@ themeSwitch.addEventListener("change" ,() => {
         body.classList.remove("dark");
         localStorage.setItem("theme" , "light");
     }
-}):
+});
